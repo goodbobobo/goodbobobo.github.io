@@ -15,7 +15,7 @@ remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-title                    : "Bobo & CY 的小屋"
+title                    : "Flipped"
 title_separator          : "-"
 name                     : "bobo&cy"
 description              : "bobo&cy 的小屋"
