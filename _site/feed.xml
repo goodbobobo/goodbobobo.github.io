@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-24T20:26:13+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Flipped</title><subtitle>bobo&amp;cy 的小屋</subtitle><author><name>Bobo &amp; CY</name><email>badbobobo@gmail.com</email></author><entry><title type="html">一周年啦</title><link href="http://localhost:4000/%E6%B8%B8%E8%AE%B0/the-first-anniversary/" rel="alternate" type="text/html" title="一周年啦" /><published>2019-03-24T00:00:00+08:00</published><updated>2019-03-24T00:00:00+08:00</updated><id>http://localhost:4000/%E6%B8%B8%E8%AE%B0/the-first-anniversary</id><content type="html" xml:base="http://localhost:4000/%E6%B8%B8%E8%AE%B0/the-first-anniversary/">&lt;p&gt;转眼间我们就在一起一周年啦，这段时间我都在上海出差，你就从深圳飞过来陪我，一起度过了愉快的没有琐碎事情打扰的三天时间，开心！小小记录一下 :satisfied:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-26T23:03:11+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Flipped</title><subtitle>bobo&amp;cy 的小屋</subtitle><author><name>Bobo &amp; CY</name><email>badbobobo@gmail.com</email></author><entry><title type="html">一周年啦</title><link href="http://localhost:4000/%E6%B8%B8%E8%AE%B0/the-first-anniversary/" rel="alternate" type="text/html" title="一周年啦" /><published>2019-03-24T00:00:00+08:00</published><updated>2019-03-24T00:00:00+08:00</updated><id>http://localhost:4000/%E6%B8%B8%E8%AE%B0/the-first-anniversary</id><content type="html" xml:base="http://localhost:4000/%E6%B8%B8%E8%AE%B0/the-first-anniversary/">&lt;p&gt;转眼间我们就在一起一周年啦，这段时间我都在上海出差，你就从深圳飞过来陪我，一起度过了愉快的没有琐碎事情打扰的三天时间，开心！小小记录一下 :satisfied:&lt;/p&gt;
 
 &lt;p&gt;TODO:
 这里是照片&lt;/p&gt;
@@ -66,31 +66,40 @@
 
 &lt;h4 id=&quot;能耗优化项目&quot;&gt;能耗优化项目&lt;/h4&gt;
 
-&lt;p&gt;1.概述&lt;/p&gt;
-
-&lt;p&gt;数据中心节能项目，通过接入数据中心的数据系统，基于预测 + 优化的思路，实现降低数据中心能耗的目的。&lt;/p&gt;
-
-&lt;p&gt;2.业务逻辑背景&lt;/p&gt;
-
-&lt;p&gt;数据中心的暖通系统是一套通过末端空调+水循环+冷机+冷却塔的散热组合，用于将机房里面的热量排到外界，保证机房的正常工作。在数据中心的能耗中用于散热的能耗可能占到接近 15% - 40%。暖通系统中有末端空调风机、冷冻泵、冷机、冷却泵、冷却塔等多个控制量，我们做的就是实时地找到最优的控制，在保证机房环境温度安全的基础上，最大效率的实现节能。&lt;/p&gt;
-
-&lt;p&gt;3.方案&lt;/p&gt;
-
-&lt;p&gt;通过数据分析和暖通专家的专业知识，我们发现系统中冷机和冷却塔之间存在一个 trade-off 关系：冷却塔比较大，冷机可能比较省电，冷却塔比较小，冷机会比较费电，于是对冷却塔、冷却泵和冷机三者的功率进行建模，模型的输入时外界环境和控制量，在保证安全的前提下最小化三者的功率和。这样问题就抽象成一个带约束的优化问题，里面的功率模型由机器学习算法提供。&lt;/p&gt;
-
-&lt;p&gt;4.核心难点&lt;/p&gt;
-
-&lt;p&gt;主要有两点：&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;整个系统中的业务逻辑分析，基于业务逻辑和数据，寻找可优化的点&lt;/li&gt;
-  &lt;li&gt;优化点确定后，基于优化点设计模型，接住机器学习算法和优化算法，将优化点转化为数值优化的问题&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;5.项目成果&lt;/p&gt;
-
 &lt;ul&gt;
-  &lt;li&gt;深圳数据中心水系统（全系统里面的一个子系统）算法上线， 24 小时自动控制，在一个月的测试期窗口里平均比人工操作节能 12%&lt;/li&gt;
-  &lt;li&gt;上海数据中心&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;概述&lt;/p&gt;
+
+    &lt;p&gt;数据中心节能项目，通过接入数据中心的数据系统，基于预测 + 优化的思路，实现降低数据中心能耗的目的。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;业务逻辑背景&lt;/p&gt;
+
+    &lt;p&gt;数据中心的暖通系统是一套通过末端空调+水循环+冷机+冷却塔的散热组合，用于将机房里面的热量排到外界，保证机房的正常工作。在数据中心的能耗中用于散热的能耗可能占到接近 15% - 40%。暖通系统中有末端空调风机、冷冻泵、冷机、冷却泵、冷却塔等多个控制量，我们做的就是实时地找到最优的控制，在保证机房环境温度安全的基础上，最大效率的实现节能。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;方案&lt;/p&gt;
+
+    &lt;p&gt;通过数据分析和暖通专家的专业知识，我们发现系统中冷机和冷却塔之间存在一个 trade-off 关系：冷却塔比较大，冷机可能比较省电，冷却塔比较小，冷机会比较费电，于是对冷却塔、冷却泵和冷机三者的功率进行建模，模型的输入时外界环境和控制量，在保证安全的前提下最小化三者的功率和。这样问题就抽象成一个带约束的优化问题，里面的功率模型由机器学习算法提供。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;核心难点&lt;/p&gt;
+
+    &lt;p&gt;主要有两点：&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;整个系统中的业务逻辑分析，基于业务逻辑和数据，寻找可优化的点&lt;/li&gt;
+      &lt;li&gt;优化点确定后，基于优化点设计模型，接住机器学习算法和优化算法，将优化点转化为数值优化的问题&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;项目成果&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;深圳数据中心水系统（全系统里面的一个子系统）算法上线， 24 小时自动控制，在一个月的测试期窗口里平均比人工操作节能 12%&lt;/li&gt;
+      &lt;li&gt;上海数据中心&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;6.项目中的角色&lt;/p&gt;
