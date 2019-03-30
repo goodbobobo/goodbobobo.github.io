@@ -17,6 +17,10 @@ toc_icon: "sticky-note"
 
 这里是感兴趣的公司的招聘信息，岗位要求
 
+- [腾讯社招](https://hr.tencent.com/social.php)
+- [字节跳动](https://job.bytedance.com/job/detail/29121)
+- [追一科技](https://zhuiyi.ai/zh-cn/about/job/342)
+
 
 ## 复习内容
 
