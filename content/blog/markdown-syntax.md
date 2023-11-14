@@ -107,6 +107,11 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 </html>
 {{< /highlight >}}
 
+```python
+def funtion(a):
+  pass
+```
+
 ## List Types
 
 #### Ordered List
@@ -134,6 +139,8 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 ## Other Elements — abbr, sub, sup, kbd, mark
 
 <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+
+$$a + b = c$$
 
 H<sub>2</sub>O
 
